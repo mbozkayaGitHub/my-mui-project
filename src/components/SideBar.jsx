@@ -4,8 +4,9 @@ import React from 'react'
 
 const SideBar = () => {
   return (
-    <Box flex={1} p={2} sx={{display:{xs:"none",sm:"block"}}}>
-          <List>
+    <Box  flex={1} p={2} sx={{display:{xs:"none",sm:"block"}}}>
+         <Box position="fixed">
+         <List>
           <ListItem disablePadding>
             <ListItemButton componenet="a" href="#home">
               <ListItemIcon>
@@ -78,7 +79,8 @@ const SideBar = () => {
           <Switch> </Switch>
             </ListItemButton>
           </ListItem>
-             </List>
+             </List> </Box> 
+         
     </Box >
   )
 };
