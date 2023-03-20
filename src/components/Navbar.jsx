@@ -1,6 +1,8 @@
-import { Pets } from "@mui/icons-material";
-import { AppBar,Toolbar,styled, Typography } from "@mui/material";
-import React from "react";
+import { Mail, Notifications, Pets } from "@mui/icons-material";
+import { AppBar,Toolbar,styled, Typography, InputBase, Badge, Avatar, Menu, MenuItem, fabClasses } from "@mui/material";
+import { Box } from "@mui/system";
+
+import React, { useState } from "react";
 
 
 const StyledToolbar = styled(Toolbar) ({
@@ -14,12 +16,25 @@ const Search = styled("div")(({theme})=> ({
   width:"40%"
 }))
 ;
-const Icons = styled("box")(({theme})=> ({
-  backgroundColor:"white",
+const Icons = styled(Box)(({theme})=> ({display:"none",alignItems:"center", gap:"10px",
+[theme.breakpoints.up("sm")]:{
+  display:"flex"
+}
+
+ 
+}))
+const UserBox = styled(Box)(({theme})=> ({display:"flex",alignItems:"center", gap:"20px",
+[theme.breakpoints.up("sm")]:{
+  display:"none"
+}
+
+
+ 
 }))
 ;
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false)
   return (
     <AppBar position="sticky">
     <StyledToolbar>
@@ -29,12 +44,46 @@ LAMA DEV
  
     <Pets sx={{display:{xs:"block",sm:"none"}}}/>
     <Search>
-      Search
+ <InputBase placeholder="search..."/>
     </Search>
     <Icons>
-icons
+    <Badge badgeContent={4} color="error">
+     <Mail  />
+     </Badge>
+   <Badge badgeContent={2} color="error">
+    <Notifications />
+    
+     </Badge>
+     <Avatar sx={{width:30, height:30 }}src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
+     onClick={(e)=>setOpen(true)}
+     />
     </Icons>
+
+    <UserBox onClick={e=>setOpen(true)}>
+    <Avatar sx={{width:30, height:30 }} src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
+    />
+    </UserBox >
+    <Typography>John</Typography>
     </StyledToolbar>
+    <Menu
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+       
+        open={open}
+        onClose={(e)=>setOpen(false)}         
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'left',
+        }}
+      >
+        <MenuItem >Profile</MenuItem>
+        <MenuItem >My account</MenuItem>
+        <MenuItem >Logout</MenuItem>
+      </Menu>
     </AppBar>
   );
 };
