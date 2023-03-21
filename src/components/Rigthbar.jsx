@@ -24,7 +24,7 @@ const Rigthbar = () => {
     <img src="https://material-ui.com/static/images/image-list/burgers.jpg" alt="" />
   </ImageListItem>
   <ImageListItem>
-    <img src="https://material-ui.com/static/images/image-list/apples.jpg" alt="" />
+    <img src="https://material-ui.com/static/images/image-list/camera.jpg" alt="" />
   </ImageListItem>
 </ImageList>
 <Typography variant="h6" fontWeight={100} gap={5} mt={2} mb={2} >Latest Conservation</Typography>

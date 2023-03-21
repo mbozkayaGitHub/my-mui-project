@@ -1,6 +1,6 @@
-import { Fab, Modal, Tooltip,styled, Typography, Avatar } from "@mui/material";
+import { Fab, Modal, Tooltip,styled, Typography, Avatar, TextField, Stack, Button, ButtonGroup } from "@mui/material";
 import React, { useState } from "react";
-import { Add as AddIcon } from "@mui/icons-material";
+import { Add as AddIcon, DateRange, EmojiEmotions, Image, PersonAdd, VideoCameraBack } from "@mui/icons-material";
 import {Box} from "@mui/system";
 
 
@@ -48,6 +48,30 @@ const Add = () => {
     </Typography>
 
    </UserBox>
+   <TextField
+   sx={{width:"100%"}}
+          id="standard-multiline-static"
+         
+          multiline
+          rows={4}
+          placeholder="What's on your mind?"
+          variant="standard"
+        />
+        <Stack direction="row" gap={1} mt={2} mb={3}>
+        <EmojiEmotions color="primary"/>
+        <Image color="secondary"/>
+        <VideoCameraBack color="success"/>
+        <PersonAdd color="error"/>
+        </Stack>
+        <ButtonGroup
+        fullWidth
+        variant="contained" aria-label="outlined primary button group">
+  <Button>Post</Button>
+  <Button  sx={{width:"100px"}}>
+   
+    <DateRange/></Button>
+
+</ButtonGroup>
   </Box>
 </StyledModal>
     </>
