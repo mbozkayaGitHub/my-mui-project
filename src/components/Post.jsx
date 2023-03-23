@@ -16,8 +16,8 @@ const Post = () => {
           <MoreVert/>
           </IconButton>
         }
-        title="Mike Brown"
-        subheader="September 14, 2023"
+        title="Mustafa Bozkaya"
+        subheader="March 23rd, 2023"
       />
       <CardMedia
         component="img"

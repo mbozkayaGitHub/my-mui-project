@@ -63,7 +63,7 @@ CODE DOCTORS DEV
     <Avatar sx={{width:30, height:30 }} src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
     />
     </UserBox >
-    <Typography>Mike</Typography>
+    <Typography>Mustafa</Typography>
     </StyledToolbar>
     <Menu
         id="demo-positioned-menu"
