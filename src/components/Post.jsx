@@ -22,14 +22,12 @@ const Post = () => {
       <CardMedia
         component="img"
         height="20%"
-        image="https://images.pexels.com/photos/949194/pexels-photo-949194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        image="https://image.cnbcfm.com/api/v1/image/106466237-1585559723548gullfoss.jpg?v=1585563337&w=740&h=416&ffmt=webp&vtcrop=y"
         alt="Paella dish"
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          This impressive paella is a perfect party dish and a fun meal to cook
-          together with your guests. Add 1 cup of frozen peas along with the mussels,
-          if you like.
+        People have traveled to see this waterfall as far back as 1875, when it was on private property. The family who owned it eventually built a trail for people that led to the falls.The gorge was formed by flash flooding, which still occurs today. When it happens, the 105-foot gorge fills completely to the top with the falls, spilling enough water to fill an Olympic-sized swimming pool every second.
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
