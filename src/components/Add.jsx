@@ -44,7 +44,7 @@ const Add = () => {
     <Avatar src="https://media.istockphoto.com/id/1270067126/tr/foto%C4%9Fraf/kameraya-bakan-g%C3%BClen-hintli-adam.jpg?s=612x612&w=0&k=20&c=55UY4nNEZOhbNlQri6RQQD2EoJrl55imj_GGdgDjBaM="
     /> 
     <Typography fontWeight={500} variant="span">
-        Mike again
+        Mike 
     </Typography>
 
    </UserBox>
