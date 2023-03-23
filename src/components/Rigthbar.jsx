@@ -18,13 +18,13 @@ const Rigthbar = () => {
 <Typography variant="h6" fontWeight={100} gap={5} mt={2} mb={2} >Latest Photos</Typography>
 <ImageList cols={3} rowHeigth={100}>
   <ImageListItem>
-    <img src="https://material-ui.com/static/images/image-list/breakfast.jpg" alt="" />
+    <img src="https://i.cnnturk.com/i/cnnturk/75/740x416/641abf8f2af10713986fa17b.jpg" alt="" />
   </ImageListItem>
   <ImageListItem>
-    <img src="https://material-ui.com/static/images/image-list/burgers.jpg" alt="" />
+    <img src="https://blog.n11.com/wp-content/uploads/2021/04/shutterstock_1691716210-3.jpg" alt="" />
   </ImageListItem>
   <ImageListItem>
-    <img src="https://material-ui.com/static/images/image-list/camera.jpg" alt="" />
+    <img src="https://im.haberturk.com/2023/03/22/3575993_9d8a7838e71875fdef4fc3f222ca78eb_1366x1366.jpg" alt="" />
   </ImageListItem>
 </ImageList>
 <Typography variant="h6" fontWeight={100} gap={5} mt={2} mb={2} >Latest Conservation</Typography>
@@ -32,10 +32,10 @@ const Rigthbar = () => {
 <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src="https://ca.slack-edge.com/T0491MX9EDC-U04AQLE11B6-0f6f92cedaa2-512" />
         </ListItemAvatar>
         <ListItemText
-          primary="Brunch this weekend?"
+          primary="Let's start a Project?"
           secondary={
             <React.Fragment>
               <Typography
@@ -44,9 +44,9 @@ const Rigthbar = () => {
                 variant="body2"
                 color="text.primary"
               >
-                Ali Connors
+            Mehmet Yıldız
               </Typography>
-              {" — I'll be in your neighborhood doing errands this…"}
+              {" — I'll make myself available for it.."}
             </React.Fragment>
           }
         />
@@ -54,10 +54,10 @@ const Rigthbar = () => {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+          <Avatar alt="Cemalettin Dimlioğlu" src="https://ca.slack-edge.com/T0491MX9EDC-U04AHMTD01H-f2fc97461120-512" />
         </ListItemAvatar>
         <ListItemText
-          primary="Summer BBQ"
+          primary="Happy Ramadan"
           secondary={
             <React.Fragment>
               <Typography
@@ -66,9 +66,9 @@ const Rigthbar = () => {
                 variant="body2"
                 color="text.primary"
               >
-                to Scott, Alex, Jennifer
+                Cemalettin Dimlioğlu
               </Typography>
-              {" — Wish I could come, but I'm out of town this…"}
+              {" — I wish you all a happy and blessed Ramadan"}
             </React.Fragment>
           }
         />
@@ -76,10 +76,10 @@ const Rigthbar = () => {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Cindy Baker" src="https://material-ui.com/static/images/avatar/3.jpg" />
+          <Avatar alt="Cindy Baker" src="https://ca.slack-edge.com/T0491MX9EDC-U049EHSPJ79-098c5b33ceef-512" />
         </ListItemAvatar>
         <ListItemText
-          primary="Oui Oui"
+          primary="Working this weekend?"
           secondary={
             <React.Fragment>
               <Typography
@@ -88,9 +88,9 @@ const Rigthbar = () => {
                 variant="body2"
                 color="text.primary"
               >
-                Sandra Adams
+             İsmail Hocam
               </Typography>
-              {' — Do you have Paris recommendations? Have you ever…'}
+              {' — I will be out of town this weekend…'}
             </React.Fragment>
           }
         />
