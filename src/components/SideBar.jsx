@@ -79,7 +79,8 @@ const SideBar = ({mode,setMode}) => {
           <Switch onChange={e=> setMode(mode === "light" ? "dark" : "light")}/> 
             </ListItemButton>
           </ListItem>
-             </List> </Box> 
+             </List> 
+             </Box> 
          
     </Box >
   )
